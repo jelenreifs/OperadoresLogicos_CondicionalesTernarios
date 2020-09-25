@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+</head>
+
+<body>
+    <h1>Ejercicio 06</h1>
+    <p>Haz uno de los ejercicios de condicionales sencillos usando un condicional ternario.</p>
+
+    <p>23. En una clase tienes tres exámenes, con un valor de 5 puntos máximo en cada uno.
+        La nota final es la mejor nota de los dos primeros exámenes más la nota del tercer examen. Crea un programa que
+        con tres notas calcula el
+        resultado de nota final con los siguientes rangos: 10 es matrícula</p>
+    <ul>
+        <li>9 y hasta 10 es sobresaliente</li>
+        <li> 7 y hasta 9 es notable</li>
+        <li> 6 y hasta 7 es bien</li>
+        <li> 5 y hasta 6 es suficiente</li>
+        <li> 0 hasta 5 es suspenso</li>
+    </ul>
+
+
+    <script>
+
+        let nota1 = parseInt(window.prompt('Introduce la nota de tu primer exámen'));
+        let nota2 = parseInt(window.prompt('Introduce la nota de tu segundo exámen'));
+        let nota3 = parseInt(window.prompt('Introduce la nota de tu tercer exámen'));
+
+        let notaFinal = (nota1 + nota2 + nota3) / 3;
+
+        console.log(notaFinal);
+
+
+
+        let tuNota = notaFinal < 5 ? 'Suspenso' :
+            notaFinal == 5 ? 'Suficiente' :
+                notaFinal == 6 ? 'Bien' :
+                    notaFinal == 7 ? 'Notable' :
+                        notaFinal == 8 ? 'Notable' :
+                            notaFinal == 9 ? 'Sobresaliente' :
+                                notaFinal == 10 ? 'Matrícula de honor' : 'Has introducido mal los datos';
+
+        console.log(`Tu nota final es ${tuNota} : ${notaFinal} `);
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

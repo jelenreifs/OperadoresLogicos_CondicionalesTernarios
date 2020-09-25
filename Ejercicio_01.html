@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01</title>
+</head>
+
+<body>
+    <h1>Ejercicio 01</h1>
+    <p>El usuario tiene dos hijos. Pregúntale la edad del mayor y los años de diferencia entre el mayor y el menor.
+        Muestra en pantalla si el menor es mayor de edad o no.
+    </p>
+
+    <script>
+        let edadMayor = parseInt(window.prompt("Introduce la edad de tu hijo mayor"));
+        let diferenciaEdades = parseInt(window.prompt("Introduce cuantos años de diferenciatienen tus dos hijos"));
+
+
+        let edadMenor = edadMayor - diferenciaEdades;
+
+        edadMenor >= 18 ? console.log("El hermano menor es mayor de edad") : console.log("El hermano menor aún no es mayor de edad")
+
+
+
+    </script>
+
+
+</body>
+
+</html>
